@@ -1,8 +1,8 @@
-/***************************************************
- ** Change List:                                  **         
- **   -Click names to remoce them from the list   ** 
- **   -Add names befor program start up           **                                             ** 
- ***************************************************/
+/*******************************************************
+ ** Original code written by Christopher Kamps        **         
+ ** XML file reader and writer written by Alex Bestoso** 
+ **                                                   ** 
+ *******************************************************/
 import java.util.Scanner;
 
 
