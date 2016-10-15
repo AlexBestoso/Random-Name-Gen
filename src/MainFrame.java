@@ -89,10 +89,10 @@ public class MainFrame extends JFrame {
 	public MainFrame() {
       String choice;
       Scanner userInput = new Scanner(System.in);
-            
-      System.out.print("Are you using new names(yes) or old names(o)"); 
+	//start-up menu    
+      System.out.print("If you are using new names please enter: yes\n If you would like to use old names, press enter\n"); 
       choice = userInput.nextLine();
-
+	//end start-up menu
       if(choice.equals("yes")){
                      //The file writer
          Scanner nameInput = new Scanner(System.in);               
@@ -113,9 +113,6 @@ public class MainFrame extends JFrame {
             rootElement.appendChild(student);
             }
             //set attribute to student element
-
-           
-          //  rootElement.appendChild(student);
                    
             //write to the xml file
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
@@ -153,7 +150,6 @@ public class MainFrame extends JFrame {
             Element studentElement = (Element) theStudent;
             
             studentArray[i] = studentElement.getAttribute("name");
-            System.out.println("{DEBUG}" + studentArray[i]);
          }  
       }catch(ParserConfigurationException e){
          e.printStackTrace();
