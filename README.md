@@ -7,6 +7,8 @@ Special thanks to chris kamps for creating the initial program design and workin
 To run in linux open the src file and run the command:
 
 sudo java MainFrame
-IT'S IMPORTANT TO RUN AS ROOT OR ELSE YOU CAN'T WRITE TO THE XML FILE
+
+it's reccomended to use chmod to enable write access on the provided xml file. If you are too lazy to do that
+us can use the sudo command as stated above.
 
 This program asks you to enter in names to be shuffled and placed in a random order. names are saved to an XML file.
